@@ -1,0 +1,96 @@
+.container {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.input-group {
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+input {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  border: 1.5px solid #e1e4e8;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  border-color: #007aff;
+}
+
+button[type="submit"] {
+  padding: 0.8rem 1.5rem;
+  background-color: #007aff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.todo-list li:last-child {
+  border-bottom: none;
+}
+
+.todo-list span {
+  flex: 1;
+  cursor: pointer;
+  padding: 0.4rem;
+  font-size: 1.05rem;
+  color: #444;
+}
+
+.todo-list li.completed span {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.delete-btn {
+  padding: 0.4rem 0.8rem;
+  background-color: #ff3b30;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.delete-btn:hover {
+  opacity: 0.8;
+}
